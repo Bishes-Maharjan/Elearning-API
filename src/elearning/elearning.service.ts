@@ -5,9 +5,9 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { CourseDTO } from 'src/dtos/create-course.dto';
-import { EditCourseDTO } from 'src/dtos/edit-course.dto';
-import { Course, CourseDocument } from 'src/Schema/course-schema';
+import { CourseDTO } from 'src/elearning/dtos/create-course.dto';
+import { EditCourseDTO } from 'src/elearning/dtos/edit-course.dto';
+import { Course, CourseDocument } from 'src/elearning/Schema/course-schema';
 
 @Injectable()
 export class ElearningService {

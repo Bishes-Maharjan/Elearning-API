@@ -9,8 +9,8 @@ import {
   Query,
 } from '@nestjs/common';
 import { ApiOperation, ApiQuery, ApiTags } from '@nestjs/swagger';
-import { CourseDTO } from 'src/dtos/create-course.dto';
-import { EditCourseDTO } from 'src/dtos/edit-course.dto';
+import { CourseDTO } from 'src/elearning/dtos/create-course.dto';
+import { EditCourseDTO } from 'src/elearning/dtos/edit-course.dto';
 import { ElearningService } from './elearning.service';
 
 @ApiTags('Course')

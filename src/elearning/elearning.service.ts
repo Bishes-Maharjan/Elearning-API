@@ -28,12 +28,12 @@ export class ElearningService {
     value: string | null,
   ) {
     const sortOrder = sort == 'asc' ? 1 : -1;
-    const skip = page * limit;
+    const skips = page * limit;
     const newCourse = await this.course
       .find({ [filter]: value })
       .select('title category subCategory VideoFor modifiedBy status')
       .sort({ [sortBy]: sortOrder })
-      .skip(skip)
+      .skip(skips)
       .limit(limit)
       .exec();
     if (!newCourse) throw new NotFoundException('Course not found');

@@ -8,7 +8,7 @@ async function bootstrap() {
     new ValidationPipe({
       transform: true,
       whitelist: true,
-      forbidNonWhitelisted: true,
+      forbidNonWhitelisted: false,
     }),
   );
   const config = new DocumentBuilder()

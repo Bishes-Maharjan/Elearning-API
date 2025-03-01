@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { ApiProperty } from '@nestjs/swagger';
 import { IsOptional, IsString } from 'class-validator';
 
@@ -26,6 +25,7 @@ export class EditCourseDTO {
   @IsString()
   @IsOptional()
   subCategory?: string;
+
   @ApiProperty({
     description: 'Video for',
     example: 'Name of the person',
@@ -33,6 +33,7 @@ export class EditCourseDTO {
   @IsString()
   @IsOptional()
   modifiedBy: string;
+
   @ApiProperty({
     description: 'Video for',
     example: 'Name of the person',
